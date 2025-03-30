@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jazan University Survey</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- main css file -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <h3>Survey Categories</h3>
+            <ul>
+                <li><a href="#">Academic Feedback</a></li>
+                <li><a href="#">Campus Facilities</a></li>
+                <li><a href="#">Student Services</a></li>
+                <li><a href="#">Faculty Evaluation</a></li>
+            </ul>
+
+            <h3>Recent Surveys</h3>
+            <ul>
+                <li><a href="#">Fall 2023 Feedback</a></li>
+                <li><a href="#">Library Services</a></li>
+                <li><a href="#">Cafeteria Quality</a></li>
+            </ul>
+
+            <div class="search-bar">
+                <h3>Search Surveys</h3>
+                <input type="text" id="survey-search" placeholder="Search surveys...">
+                <div id="search-results"></div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <button class="menu-toggle" id="menuToggle">☰</button>
+
+            <header>
+                <div class="logo">
+                    <img src="images/logo-jazan-uni2.png" alt="" width="100px">
+                </div>
+                <div class="text_title">
+                    <h1>Jazan University</h1>
+                    <p>Student Feedback Survey</p>
+                </div>
+            </header>
+
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#surveys">Surveys</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <section class="survey-form" id="home">
+                <h2>Student Satisfaction Survey</h2>
+                <p>Help us improve Jazan University by sharing your feedback.</p>
+
+                <form id="surveyForm">
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                        <div class="error" id="nameError">Please enter your full name</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">University Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="error" id="emailError">Please enter a valid university email</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="college">College/Faculty</label>
+                        <select class="select-box" id="college" name="college" required>
+                                <option value="">Select your college</option>
+                                <option value="medicine">College of Medicine</option>
+                                <option value="dentistry">College of Dentistry</option>
+                                <option value="pharmacy">College of Pharmacy</option>
+                                <option value="science">College of Science</option>
+                                <option value="arts">College of Arts and Humanities</option>
+                                <option value="engineering">College of Engineering and Computer Science</option>
+                                <option value="business">College of Business</option>
+                                <option value="sharia">College of Sharia and Law</option>
+                                <option value="nursing">College of Nursing and Health Sciences</option>
+                                <option value="applied">Applied College</option>
+                                <option value="applied_samtah">Applied College (Samtah Branch)</option>
+                                <option value="applied_alardah">Applied College (Al-Ardah Branch)</option>
+                                <option value="univ_daer">University College (Al-Da'er Branch)</option>
+                                <option value="univ_farasan">University College (Farasan Branch)</option>
+                                <option value="univ_darb">University College (Al-Darb Branch)</option>
+                                <option value="industrial">Industrial Applications College (Bish Branch)</option>
+                        </select>
+                        <div class="error" id="collegeError">Please select your college</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Academic Level</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="freshman" name="level" value="freshman"> Year 1
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="sophomore" name="level" value="sophomore"> Year 2
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="junior" name="level" value="junior"> Year 3
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="senior" name="level" value="senior"> Year 4
+                            </div>
+                        </div>
+                        <div class="error" id="levelError">Please select your academic level</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>What aspects of the university are you satisfied with? (Select all that apply)</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="faculty" name="satisfied" value="faculty"> Faculty quality
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="facilities" name="satisfied" value="facilities"> Campus facilities
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="library" name="satisfied" value="library"> Library resources
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="services" name="satisfied" value="services"> Student services
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="suggestions">Suggestions for improvement</label>
+                        <textarea id="suggestions" name="suggestions" rows="10"></textarea>
+                    </div>
+                    <button type="submit">Submit Survey</button>
+                </form>
+            </section>
+
+            <footer>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <p>&copy; 2025 Jazan University. All rights reserved.</p>
+            </footer>
+        </main>
+    </div>
+    <!-- main javascript file -->
+    <script src="script/script.js"></script>
+</body>
+</html>
