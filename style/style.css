@@ -93,6 +93,17 @@
      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
  }
 
+ header {
+    background-image: url('../images/images_about_background.jfif');
+    background-repeat: no-repeat;
+    background-size: 200vh;
+    background-size: cover;
+    background: 
+    linear-gradient(#11417f7e, #11417f),
+    url('../images/images_about_background.jfif');
+}
+
+
  header .text_title {
      text-wrap: nowrap;
  }
@@ -122,8 +133,8 @@
  .nav a {
      color: var(--dark);
      text-decoration: none;
-     font-weight: bold;
      transition: color 0.3s;
+     font-size: 25px;
      color: white;
  }
 
@@ -242,6 +253,7 @@
 
  section {
      color: #333;
+     animation: fadeIn 1s ease;
  }
 
  /* Footer */
@@ -334,7 +346,7 @@
      .menu-toggle {
          display: block;
          position: fixed;
-         top: 10px;
+         top: 15px;
          right: 30px;
          color: white;
          z-index: 101;

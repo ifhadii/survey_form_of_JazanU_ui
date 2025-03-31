@@ -8,3 +8,85 @@ header {
     url('../images/images_about_background.jfif');
 }
 
+
+#about-us {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.title {
+    color: #34495e;
+    margin-top: 30px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    /* border-bottom: 2px solid #2c3e50; */
+    padding-bottom: 10px;
+}
+
+p {
+    color: #555;
+    text-align: justify;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+ul {
+    /* padding-left: 20px; */
+    list-style-type: disc;
+}
+
+li {
+    margin-bottom: 12px;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.footer-p {
+    color: #ffffff;
+    text-align: center;
+}
+
+ul li strong {
+    color: #2c3e50;
+}
+
+#about-us p:last-of-type {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    #about-us {
+        padding: 20px;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    ul li {
+        font-size: 1rem;
+    }
+}
