@@ -253,7 +253,7 @@
  }
 
  section {
-     color: #333;
+     color: #043a63;
      animation: fadeIn 1s ease;
  }
 
@@ -264,6 +264,7 @@
      text-align: center;
      padding: 20px;
      border-radius: 10px;
+     margin-top: 20px;
  }
 
  .social-icons {
@@ -284,7 +285,6 @@
  .menu-toggle {
      display: none;
  }
-
 
  /* Animations */
  @keyframes fadeIn {

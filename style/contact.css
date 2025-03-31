@@ -65,5 +65,15 @@ section {
     }
 }
 
+.error {
+    display: none;
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.error-border {
+    border: 2px solid red;
+}
 
 

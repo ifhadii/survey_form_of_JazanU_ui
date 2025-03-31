@@ -11,6 +11,11 @@
     color: #333;
 }
 
+.text_title p {
+    color: #ffffff;
+    text-align: center;
+}
+
 h2 {
     text-align: center;
     color: #2c3e50;
@@ -33,9 +38,10 @@ p {
     margin-bottom: 20px;
 }
 
-ul {
+.about-list {
     /* padding-left: 20px; */
     list-style-type: disc;
+    margin-left: 70px;
 }
 
 li {
