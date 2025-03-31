@@ -1,7 +1,8 @@
  /* Global Styles */
  :root {
      /* Jazan University Blue */
-     --primary: #11417f;
+     /* --primary: #11417f; */
+     --primary: #1a5276;
      --secondary: #2083c9;
      /* Gold accent */
      --light: #f8f9fa;
@@ -99,7 +100,7 @@
     background-size: 200vh;
     background-size: cover;
     background: 
-    linear-gradient(#11417f7e, #11417f),
+    linear-gradient(#11417f7e, #1a5276),
     url('../images/images_about_background.jfif');
 }
 

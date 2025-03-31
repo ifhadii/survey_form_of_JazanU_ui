@@ -1,14 +1,3 @@
-header {
-    background-image: url('../images/images_about_background.jfif');
-    background-repeat: no-repeat;
-    background-size: 200vh;
-    background-size: cover;
-    background: 
-    linear-gradient(#11417f7e, #11417f),
-    url('../images/images_about_background.jfif');
-}
-
-
 #about-us {
     max-width: 100%;
     margin: 0 auto;
@@ -33,13 +22,12 @@ h2 {
     color: #34495e;
     margin-top: 30px;
     font-size: 1.8rem;
-    text-transform: uppercase;
     /* border-bottom: 2px solid #2c3e50; */
     padding-bottom: 10px;
 }
 
 p {
-    color: #555;
+    color: #000000;
     text-align: justify;
     font-size: 1.1rem;
     margin-bottom: 20px;

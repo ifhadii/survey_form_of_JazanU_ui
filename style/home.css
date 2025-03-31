@@ -61,3 +61,81 @@
     }
 }
 
+/* Additional Contact Page Styles */
+.services-section {
+    padding: 40px 0;
+}
+
+.services-title {
+    text-align: center;
+    color: #1a5276;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.service-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.service-icon {
+    background: #1a5276;
+    color: white;
+    font-size: 2rem;
+    padding: 20px;
+    text-align: center;
+}
+
+.service-content {
+    padding: 20px;
+}
+
+.service-content h3 {
+    color: #2874a6;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.service-content p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.service-contact {
+    border-top: 1px solid #eee;
+    padding: 15px 20px;
+    background: #f9f9f9;
+}
+
+.service-contact a {
+    color: #1a5276;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.service-contact a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}

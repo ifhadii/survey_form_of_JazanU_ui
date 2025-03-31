@@ -1,6 +1,6 @@
 /* Contact Page Specific Styles */
 section {
-    
+
 }
 
 .contact-grid {
@@ -11,7 +11,7 @@ section {
 }
 
 .contact-card {
-    background: #11417f;
+    background: #1a5276;
     color: #ffffff;
     padding: 20px;
     border-radius: 8px;
@@ -64,4 +64,6 @@ section {
         padding: 20px;
     }
 }
+
+
 
