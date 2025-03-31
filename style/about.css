@@ -1,0 +1,10 @@
+header {
+    background-image: url('../images/images_about_background.jfif');
+    background-repeat: no-repeat;
+    background-size: 200vh;
+    background-size: cover;
+    background: 
+    linear-gradient(#11417f7e, #11417f),
+    url('../images/images_about_background.jfif');
+}
+

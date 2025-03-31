@@ -29,7 +29,7 @@
       const email = document.getElementById('email');
       const emailError = document.getElementById('emailError');
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailRegex.test(email.value) || !email.value.includes('jazanu.edu.sa')) {
+      if (!emailRegex.test(email.value) || email.value.includes('jazanu.edu.sa')) {
           email.classList.add('invalid');
           emailError.style.display = 'block';
           isValid = false;
@@ -111,3 +111,27 @@
   });
 
 
+  document.getElementById("surveyForm").onsubmit = function(event) {
+    event.preventDefault();
+
+    let name = document.getElementById("fullname").value;
+    let email = document.getElementById("email").value;
+    let college = document.getElementById("college").value;
+    let level = document.querySelector('input[name="level"]:checked')?.value || "Not specified";
+    let suggestions = document.getElementById("suggestions").value;
+    
+    let satisfaction = [];
+    document.querySelectorAll('input[name="satisfied"]:checked').forEach(checkbox => {
+        satisfaction.push(checkbox.value);
+    });
+
+    let mailtoLink = `mailto:kkxstudentx@gmail.com?subject=Survey Submission&body=
+        Name: ${name}%0D%0A
+        Email: ${email}%0D%0A
+        College: ${college}%0D%0A
+        Academic Level: ${level}%0D%0A
+        Satisfaction Areas: ${satisfaction.join(", ")}%0D%0A
+        Suggestions: ${suggestions}`;
+
+    window.location.href = mailtoLink;
+};
