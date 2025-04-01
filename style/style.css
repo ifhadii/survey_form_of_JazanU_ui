@@ -165,6 +165,7 @@ header .text_title {
     font-size: 2rem;
     cursor: pointer;
     background: rgba(0,0,0,0.3);
+    animation: fadeIn 1s ease;
     padding: 5px 10px;
     border-radius: 4px;
 }
@@ -323,6 +324,20 @@ footer {
     color: var(--secondary);
 }
 
+.input-valid {
+    border: 2px solid green;
+}
+
+.input-invalid {
+    border: 2px solid red;
+}
+
+#emailError {
+    font-size: 0.8em;
+    margin-top: 5px;
+    display: none; /* Hidden by default */
+}
+
 
 /* Animations */
 @keyframes fadeIn {
@@ -367,6 +382,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+        animation: fadeIn 1s ease;
         width: 100%;
     }
 
@@ -465,6 +481,7 @@ footer {
         padding: 5px 10px;
         font-size: 2rem;
         border-radius: 4px;
+        animation: fadeIn 1s ease;
         cursor: pointer;
     }
 
