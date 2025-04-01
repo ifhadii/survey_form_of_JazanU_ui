@@ -1,6 +1,4 @@
-/* Contact Page Specific Styles */
-section {
-
+.contact-section {
 }
 
 .contact-grid {
@@ -25,13 +23,13 @@ section {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.contact-card i {
+.contact-icon {
     font-size: 2.5rem;
     color: #ffffff;
     margin-bottom: 15px;
 }
 
-.contact-card h3 {
+.contact-title {
     color: #ffffff;
     margin-bottom: 10px;
 }
@@ -65,7 +63,7 @@ section {
     }
 }
 
-.error {
+.error-message {
     display: none;
     color: red;
     font-size: 14px;
@@ -75,5 +73,3 @@ section {
 .error-border {
     border: 2px solid red;
 }
-
-

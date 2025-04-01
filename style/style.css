@@ -9,6 +9,10 @@
      --dark: #343a40;
  }
 
+ html {
+     scroll-behavior: smooth;
+ }
+
  * {
      margin: 0;
      padding: 0;
@@ -17,7 +21,7 @@
  }
 
  body {
-     background-color: #f5f5f5;
+     background-color: #eee;
      color: var(--dark);
      line-height: 1.6;
  }
@@ -50,6 +54,7 @@
 
  .sidebar li {
      margin-bottom: 10px;
+     text-wrap: nowrap;
  }
 
  .sidebar a {
@@ -79,6 +84,13 @@
      padding: 20px;
  }
 
+ .main-heading {
+     text-align: center;
+     color: #1a5276;
+     margin-bottom: 30px;
+     font-size: 2rem;
+ }
+
  header {
      display: flex;
      flex-direction: row;
@@ -95,14 +107,14 @@
  }
 
  header {
-    background-image: url('../images/images_about_background.jfif');
-    background-repeat: no-repeat;
-    background-size: 200vh;
-    background-size: cover;
-    background: 
-    linear-gradient(#11417f7e, #1a5276),
-    url('../images/images_about_background.jfif');
-}
+     background-image: url('../images/images_about_background.jfif');
+     background-repeat: no-repeat;
+     background-size: 200vh;
+     background-size: cover;
+     background:
+         linear-gradient(#11417f7e, #1a5276),
+         url('../images/images_about_background.jfif');
+ }
 
 
  header .text_title {
@@ -131,11 +143,12 @@
      margin-top: 20px;
  }
 
+
  .nav a {
      color: var(--dark);
      text-decoration: none;
      transition: color 0.3s;
-     font-size: 25px;
+     font-size: 1.5rem;
      color: white;
  }
 
@@ -181,7 +194,7 @@
      border: 1px solid #ccc;
      border-radius: 4px;
      background-color: #fff;
-     font-size: 16px;
+     font-size: 1rem;
      color: #333;
 
      /* Dropdown arrow styling */
@@ -230,21 +243,32 @@
      flex-direction: column;
  }
 
-
  .radio-option,
  .checkbox-option {
      margin-bottom: 8px;
  }
 
  button {
-     background: var(--primary);
+     background: #2083c9;
      color: white;
      border: none;
      padding: 12px 20px;
      border-radius: 4px;
      cursor: pointer;
-     font-size: 16px;
+     font-size: 1rem;
      transition: background 0.3s, transform 0.2s;
+ }
+
+ .valid {
+     color: green;
+ }
+
+ .invalid {
+     color: red;
+ }
+
+ #emailStatus {
+     margin-left: 10px;
  }
 
  button:hover {
@@ -255,6 +279,10 @@
  section {
      color: #043a63;
      animation: fadeIn 1s ease;
+     background-color: white;
+     padding: 30px;
+     border-radius: 10px;
+     margin-top: 30px;
  }
 
  /* Footer */
@@ -267,6 +295,51 @@
      margin-top: 20px;
  }
 
+ .form-group {
+     margin-bottom: 20px;
+ }
+
+ label {
+     display: block;
+     margin-bottom: 5px;
+     font-weight: bold;
+ }
+
+ input {
+     /* width: 100%; */
+     padding: 10px;
+     font-size: 16px;
+     border: 1px solid #ddd;
+     border-radius: 4px;
+ }
+
+ .error {
+     margin-top: 5px;
+     font-size: 14px;
+ }
+
+ .valid {
+     color: #28a745;
+ }
+
+ .invalid {
+     color: #dc3545;
+ }
+
+ button {
+     padding: 10px 20px;
+     background-color: #007bff;
+     color: white;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+ }
+
+ button:disabled {
+     background-color: #cccccc;
+     cursor: not-allowed;
+ }
+
  .social-icons {
      margin-bottom: 15px;
  }
@@ -274,7 +347,7 @@
  .social-icons a {
      color: white;
      margin: 0 10px;
-     font-size: 20px;
+     font-size: 2rem;
      transition: color 0.3s;
  }
 
@@ -300,15 +373,100 @@
  }
 
  /* Responsive Design */
- @media (max-width: 930px) {
+ @media (max-width: 1100px) {
+     header {
+         padding: 15px 10px;
+         justify-content: space-around;
+         display: flex;
+         flex-shrink: 2;
+     }
+
+     .nav ul li a {
+         font-size: 1.5rem;
+     }
+
+     .text_title h1,
+     p {
+         font-size: 1rem;
+     }
+
      header .text_title {
-         font-size: 12px;
+         font-size: 1.5rem;
      }
  }
 
- @media (max-width: 865) {
-     header .text_title {
+
+
+ @media (max-width: 1100px) {
+    header {
+    }
+     .nav {
          display: none;
+     }
+
+     .nav_sidebar {
+         display: block;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .nav_sidebar .links {
+         display: flex;
+         justify-content: space-between;
+         width: 600px;
+         padding: 10px;
+         flex-direction: row;
+         border-radius: 10px;
+         background-color: #043a63;
+     }
+
+     .nav_sidebar .links li a:hover {
+         color: #3e8cdf;
+     }
+
+     .nav_sidebar .links li {
+         list-style: none;
+     }
+
+     .nav_sidebar .links li a {
+         color: white;
+         font-weight: bold;
+         list-style: none;
+         text-decoration: none;
+     }
+
+     header .text_title h1 {
+         font-size: 1.5rem;
+     }
+ }
+
+ @media (max-width: 768px) {
+     header {
+         flex-direction: row;
+         text-align: center;
+         justify-content: baseline;
+         padding: 15px;
+     }
+
+     header .text_title {
+         font-size: 1.4rem;
+     }
+
+     .nav ul {
+         flex-direction: row;
+         align-items: center;
+     }
+ }
+
+ @media (max-width: 480px) {
+     header {
+         font-size: 1.4rem;
+         padding: 10px;
+     }
+
+     header .text_title {
+         font-size: 1.4rem;
      }
  }
 
@@ -319,12 +477,35 @@
 
      .nav_sidebar {
          display: block;
+         display: flex;
+         justify-content: center;
+         align-items: center;
      }
 
      .nav_sidebar .links {
          display: flex;
          gap: 25px;
+         padding: 10px;
          flex-direction: row;
+         justify-content: space-around;
+         border-radius: 10px;
+         /* position: fixed; */
+         background-color: #043a63;
+     }
+
+     .nav_sidebar .links li a:hover {
+         color: #3e8cdf;
+     }
+
+     .nav_sidebar .links li {
+         list-style: none;
+     }
+
+     .nav_sidebar .links li a {
+         color: white;
+         font-weight: bold;
+         list-style: none;
+         text-decoration: none;
      }
 
      .nav {
@@ -337,24 +518,24 @@
          position: fixed;
          height: 100vh;
          z-index: 100;
+
      }
 
      .sidebar.active {
          transform: translateX(0);
      }
 
-
      .menu-toggle {
          display: block;
          position: fixed;
-         top: 15px;
+         top: 12px;
          right: 30px;
          color: white;
          z-index: 101;
          margin-top: 10px;
          margin-left: 10px;
          padding: 5px;
-         font-size: 20px;
+         font-size: 2rem;
          border-radius: 4px;
          cursor: pointer;
          /* background: var(--primary); */
@@ -362,11 +543,12 @@
      }
 
      header {
-         font-size: 15px;
+         font-size: 1.4rem;
+         justify-content: space-between;
      }
 
      .survey-form h2 {
-         font-size: 20px;
+         font-size: 2rem;
      }
 
      .nav ul {
@@ -379,14 +561,66 @@
      }
  }
 
- /* Validation Styles */
- .error {
-     color: #dc3545;
-     font-size: 14px;
-     margin-top: 5px;
-     display: none;
+ .input-invalid {
+     border: 2px solid #dc3545 !important;
+     /* Red border for invalid */
  }
 
- .invalid {
-     border-color: #dc3545 !important;
+ .input-valid {
+     border: 2px solid #28a745 !important;
+     /* Green border for valid */
  }
+
+ .error {
+     color: #dc3545;
+     font-size: 0.875rem;
+     margin-top: 0.25rem;
+ }
+
+ .valid-message {
+     color: #28a745;
+     font-size: 0.875rem;
+     margin-top: 0.25rem;
+ }
+
+ /* Radio and Checkbox Group Styling */
+.radio-group.input-invalid,
+.checkbox-group.input-invalid {
+  border-left: 3px solid #dc3545;
+  padding-left: 10px;
+}
+
+.radio-group.input-valid,
+.checkbox-group.input-valid {
+  border-left: 3px solid #28a745;
+  padding-left: 10px;
+}
+
+/* Individual Radio/Checkbox Option Styling */
+.radio-option.input-valid,
+.checkbox-option.input-valid {
+  color: #28a745;
+}
+
+.radio-option.input-invalid,
+.checkbox-option.input-invalid {
+  color: #dc3545;
+}
+
+/* Select Box Styling */
+.select-box.input-valid {
+  border: 2px solid #28a745;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.select-box.input-invalid {
+  border: 2px solid #dc3545;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+/* Error Message Styling */
+.error {
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  display: none;
+}

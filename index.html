@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,41 +9,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- main css file -->
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/home.css">
+    <!-- sections css files -->
+    <link rel="stylesheet" href="style/services.css">
+    <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="style/contact.css">
 </head>
+
 <body>
     <div class="container">
-              <!-- Sidebar -->
-              <aside class="sidebar" id="sidebar">
-                <div class="nav_sidebar">
-                    <ul class="links">
-                        <li><a href="index.html">Services</a></li>
-                        <li><a href="../html/about.html">About</a></li>
-                        <li><a href="../html/survey.html">Survey</a></li>
-                        <li><a href="../html/contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <h3>Survey Categories</h3>
-                <ul>
-                    <li><a href="#">Academic Feedback</a></li>
-                    <li><a href="#">Campus Facilities</a></li>
-                    <li><a href="#">Student Services</a></li>
-                    <li><a href="#">Faculty Evaluation</a></li>
-                </ul>
-    
-                <h3>Recent Surveys</h3>
-                <ul>
-                    <li><a href="#">Fall 2023 Feedback</a></li>
-                    <li><a href="#">Library Services</a></li>
-                    <li><a href="#">Cafeteria Quality</a></li>
-                </ul>
-    
-                <div class="search-bar">
-                    <h3>Search Surveys</h3>
-                    <input type="text" id="survey-search" placeholder="Search surveys...">
-                    <div id="search-results"></div>
-                </div>
-            </aside>
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <h3>Survey Categories</h3>
+            <ul>
+                <li><a href="#">Academic Feedback</a></li>
+                <li><a href="#">Campus Facilities</a></li>
+                <li><a href="#">Student Services</a></li>
+                <li><a href="#">Faculty Evaluation</a></li>
+            </ul>
+
+            <h3>Recent Surveys</h3>
+            <ul>
+                <li><a href="#">Fall 2023 Feedback</a></li>
+                <li><a href="#">Library Services</a></li>
+                <li><a href="#">Cafeteria Quality</a></li>
+            </ul>
+
+            <div class="search-bar">
+                <h3>Search Surveys</h3>
+                <input type="text" id="survey-search" placeholder="Search surveys...">
+                <div id="search-results"></div>
+            </div>
+        </aside>
 
         <!-- Main Content -->
         <main class="main-content">
@@ -53,12 +50,12 @@
                     <img src="images/logo-jazan-uni2.png" alt="Jazan University Logo" width="100px">
                 </div>
                 <div class="nav">
-                <ul>
-                    <li><a href="index.html">Services</a></li>
-                    <li><a href="../html/about.html">About</a></li>
-                    <li><a href="../html/survey.html">Survey</a></li>
-                    <li><a href="../html/contact.html">Contact</a></li>
-                </ul>
+                    <ul>
+                        <li><a href="#about-us">About</a></li>
+                        <li><a href="#student-benefits">Services</a></li>
+                        <li><a href="#survey">Survey</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </div>
 
                 <div class="text_title">
@@ -66,11 +63,65 @@
                     <p>University Services</p>
                 </div>
             </header>
+            <!-- responsive -->
+            <div class="nav_sidebar">
+                <ul class="links">
+                    <li><a href="#student-benefits" >Services</a></li>
+                    <li><a href="#about-us">About</a></li>
+                    <li><a href="#survey">Survey</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- about section -->
+            <section id="about-us">
+                <h1 class="main-heading">About Us</h1>
+                <h4 class="title">Our Story</h4>
+                <p>At Jazan University, we recognize the power of student feedback in shaping a better educational
+                    experience. Our initiative was born from the belief that students should have an active role in
+                    refining university services, ensuring their voices drive continuous improvement. By creating a
+                    structured approach to collecting and analyzing feedback, we aim to make meaningful changes that
+                    enhance academic success and campus life.</p>
 
+                <h4 class="title">Who We Serve</h4>
+                <p>Our feedback system is designed for every student at Jazan University. Whether you are an
+                    undergraduate, graduate, or part of a specialized program, your insights matter. By identifying
+                    concerns and proposing solutions, students contribute to a university environment that is more
+                    responsive, inclusive, and aligned with their needs.</p>
 
+                <h4 class="title">How We Operate</h4>
+                <p>We gather student feedback through structured surveys covering various aspects of university life,
+                    including academics, facilities, and administrative services. This data is analyzed to identify
+                    trends and areas for improvement. The results are then shared with university decision-makers to
+                    implement necessary changes, ensuring a transparent and data-driven approach to problem-solving.</p>
 
+                <h4 class="title">Our Team</h4>
+                <p>Our initiative is supported by a dedicated team of faculty, administrators, and student
+                    representatives who are committed to fostering open communication between students and the
+                    university leadership. We work together to ensure that every voice is heard and every concern is
+                    addressed.</p>
+
+                <h4 class="title">Impact and Benefits</h4>
+                <ul class="about-list">
+                    <li><strong>Enhancing Academic Quality:</strong> Feedback helps improve teaching methods, course
+                        materials, and overall student learning experiences.</li>
+                    <li><strong>Improving Campus Facilities:</strong> Student input guides enhancements in libraries,
+                        study areas, and laboratories.</li>
+                    <li><strong>Optimizing Administrative Services:</strong> Registration, financial aid, and student
+                        support services become more efficient and student-friendly.</li>
+                    <li><strong>Fostering Student Engagement:</strong> A culture of participation ensures that students
+                        actively shape university policies and decisions.</li>
+                    <li><strong>Building Trust and Transparency:</strong> Regular updates on feedback-driven changes
+                        reinforce confidence in the university’s commitment to improvement.</li>
+                </ul>
+
+                <h4 class="title">Join Us in Making a Difference</h4>
+                <p>We encourage every student to participate in our feedback initiatives. Your voice matters, and
+                    together, we can build a university that continuously evolves to meet the needs of its students.
+                    Share your insights and be a part of the change!</p>
+            </section>
+            <!-- student services section -->
             <section class="services-section" id="student-benefits">
-                <h2 class="services-title">Student Benefits & Services</h2>
+                <h2 class="services-title">Services</h2>
                 <div class="services-grid">
                     <div class="service-card">
                         <div class="service-icon">
@@ -78,20 +129,22 @@
                         </div>
                         <div class="service-content">
                             <h3>Guidance for Admissions</h3>
-                            <p>Get step-by-step assistance with application processes, admission requirements, and eligibility criteria.</p>
+                            <p>Get step-by-step assistance with application processes, admission requirements, and
+                                eligibility criteria.</p>
                         </div>
                     </div>
-            
+
                     <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-book"></i>
                         </div>
                         <div class="service-content">
                             <h3>Access to Academic Resources</h3>
-                            <p>Utilize digital libraries, research databases, and extensive study materials to enhance learning.</p>
+                            <p>Utilize digital libraries, research databases, and extensive study materials to enhance
+                                learning.</p>
                         </div>
                     </div>
-            
+
                     <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-home"></i>
@@ -101,17 +154,18 @@
                             <p>Secure comfortable and affordable dormitory accommodations with essential facilities.</p>
                         </div>
                     </div>
-            
+
                     <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-chalkboard-teacher"></i>
                         </div>
                         <div class="service-content">
                             <h3>Academic Advising</h3>
-                            <p>Receive expert guidance on course selection, degree planning, and academic progression.</p>
+                            <p>Receive expert guidance on course selection, degree planning, and academic progression.
+                            </p>
                         </div>
                     </div>
-            
+
                     <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-flask"></i>
@@ -121,17 +175,18 @@
                             <p>Access funding opportunities and mentorship for academic research projects.</p>
                         </div>
                     </div>
-            
+
                     <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-laptop-code"></i>
                         </div>
                         <div class="service-content">
                             <h3>E-Learning & Digital Tools</h3>
-                            <p>Get technical support for online courses, digital learning platforms, and software tools.</p>
+                            <p>Get technical support for online courses, digital learning platforms, and software tools.
+                            </p>
                         </div>
                     </div>
-            
+
                     <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-heartbeat"></i>
@@ -141,7 +196,7 @@
                             <p>Benefit from on-campus medical care, counseling, and wellness programs.</p>
                         </div>
                     </div>
-            
+
                     <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-briefcase"></i>
@@ -151,20 +206,200 @@
                             <p>Access internship opportunities, job placement services, and career counseling.</p>
                         </div>
                     </div>
-            
+
                     <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-users"></i>
                         </div>
                         <div class="service-content">
                             <h3>Student Clubs & Activities</h3>
-                            <p>Join student organizations, participate in events, and engage in extracurricular activities.</p>
+                            <p>Join student organizations, participate in events, and engage in extracurricular
+                                activities.</p>
                         </div>
                     </div>
                 </div>
             </section>
-            
+            <!-- survey section -->
+            <section class="survey-form" id="survey">
+                <h1 class="main-heading">Survey</h1>
+                <p>Help us improve Jazan University by sharing your feedback.</p>
 
+                <form id="surveyForm">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        <span id="nameStatus"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Jazan University Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="username@jazanu.edu.sa">
+                        <span id="emailStatus"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="college">College/Faculty</label>
+                        <select class="select-box" id="college" name="college" required>
+                            <option value="">Select your college</option>
+                            <option value="medicine">College of Medicine</option>
+                            <option value="dentistry">College of Dentistry</option>
+                            <option value="pharmacy">College of Pharmacy</option>
+                            <option value="science">College of Science</option>
+                            <option value="arts">College of Arts and Humanities</option>
+                            <option value="engineering">College of Engineering and Computer Science</option>
+                            <option value="business">College of Business</option>
+                            <option value="sharia">College of Sharia and Law</option>
+                            <option value="nursing">College of Nursing and Health Sciences</option>
+                            <option value="applied">Applied College</option>
+                            <option value="applied_samtah">Applied College (Samtah Branch)</option>
+                            <option value="applied_alardah">Applied College (Al-Ardah Branch)</option>
+                            <option value="univ_daer">University College (Al-Da'er Branch)</option>
+                            <option value="univ_farasan">University College (Farasan Branch)</option>
+                            <option value="univ_darb">University College (Al-Darb Branch)</option>
+                            <option value="industrial">Industrial Applications College (Bish Branch)</option>
+                        </select>
+                        <div class="error" id="collegeError">Please select your college</div>
+                    </div>
+
+                    <div class="form-group" required>
+                        <label>Academic Level</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="freshman" name="level" value="freshman - Year 1"> Year 1
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="sophomore" name="level" value="sophomore - Year 2"> Year 2
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="junior" name="level" value="junior  - Year 3"> Year 3
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="senior" name="level" value="senior  - Year 4"> Year 4
+                            </div>
+                        </div>
+                        <div class="error" id="levelError">Please select your academic level</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>What aspects of the university are you satisfied with? (Select all that apply)</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="faculty" name="satisfied" value="Faculty quality"> Faculty
+                                quality
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="facilities" name="satisfied" value="Campus facilities">
+                                Campus facilities
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="library" name="satisfied" value="Library resources"> Library
+                                resources
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="services" name="satisfied" value="Student services"> Student
+                                services
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="suggestions">Suggestions for improvement</label>
+                        <textarea id="suggestions" name="suggestions" rows="10"></textarea>
+                    </div>
+                    <button id="submitBtn" type="submit" onclick="submitSurveyForm()">Submit Survey</button>
+                </form>
+            </section>
+            <!-- contact section -->
+            <section class="contact-content">
+                <h1 class="main-heading">Contact Us</h1>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Main Campus</h3>
+                        <p>Jazan University<br>
+                            P.O. Box 114<br>
+                            Jazan 45142, Saudi Arabia</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>General Inquiries: +966 17 321 1000<br>
+                            Admissions: +966 17 321 1111<br>
+                            Fax: +966 17 321 1001</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>General: info@jazanu.edu.sa<br>
+                            Admissions: admission@jazanu.edu.sa<br>
+                            Media: media@jazanu.edu.sa</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Working Hours</h3>
+                        <p>Sunday - Thursday<br>
+                            7:30 AM - 3:30 PM<br>
+                            (GMT +3)</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm">
+
+                        <div class="form-group">
+                            <label for="name">Full Name:</label>
+                            <input type="text" class="full_name_survey" id="contactName" name="name" required placeholder="Enter your full name">
+                            <span id="name_Status"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-email">Email Address</label>
+                            <input type="email" id="contact-email" name="email" placeholder="Enter your email">
+                            <div class="error" id="emailError">Please enter a valid email</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-subject">Subject</label>
+                            <select id="contact-subject" name="subject">
+                                <option value="">Select a subject</option>
+                                <option value="admissions">Admissions Inquiry</option>
+                                <option value="academics">Academic Programs</option>
+                                <option value="research">Research Collaboration</option>
+                                <option value="media">Media Inquiry</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                            <div class="error" id="subjectError">Please select a subject</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact">Mobile Number</label>
+                            <input type="tel" id="contact" name="contact" placeholder="05XXXXXXXX">
+                            <div class="status" id="contactStatus"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message">Your Message</label>
+                            <textarea id="contact-message" name="message" rows="6"></textarea>
+                            <div class="error" id="messageError">Please enter your message</div>
+                        </div>
+
+                        <button type="submit" onclick="submitSurveyForm()">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="map-container">
+                    <h2>Location Map</h2>
+                    <div class="map-embed">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7632.503039614147!2d42.546882!3d16.962174!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1608075c2b71223f%3A0x5a9dc54b12ac9433!2sJazan%20University!5e0!3m2!1sen!2ssa!4v1743406639235!5m2!1sen!2ssa"
+                            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </section>
             <footer>
                 <div class="social-icons">
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -180,4 +415,5 @@
     <!-- main javascript file -->
     <script src="script/script.js"></script>
 </body>
+
 </html>
