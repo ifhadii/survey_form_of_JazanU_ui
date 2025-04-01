@@ -41,10 +41,22 @@
     margin-left: 70px;
 }
 
+strong {
+    color: #1a5276;
+}
+
 .list-item {
     margin-bottom: 12px;
     color: #333;
     font-size: 1.1rem;
+}
+
+.contact {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 4px;
+    transition: border 0.3s;
 }
 
 .footer-text {
@@ -53,7 +65,7 @@
 }
 
 .list-item strong {
-    color: #2c3e50;
+    color: #1a5276;
 }
 
 .about-us .paragraph:last-of-type {
